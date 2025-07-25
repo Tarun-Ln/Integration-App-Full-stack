@@ -75,6 +75,28 @@ const QuizInterface = ({ topic, onComplete, onBack }: QuizInterfaceProps) => {
       userAnswer.toLowerCase().trim() === answer.toLowerCase().trim()
     );
     
+    const CheckerAnswers = async() =>{
+      try{
+        const fetchanswer = await fetch('http://127.0.0.1:5001/integrateapi/validate',{
+          method: 'POST',
+          headers: {
+            'Content-Type' : 'application/json'
+          },
+          body: JSON.stringify({
+            user_problem: problems[currentProblem],
+          })
+        });
+
+        const realans = await fetchanswer.json();
+        console.log('The Correct answer is: ', realans);
+
+      } catch(error){
+        console.log("An error has occured from API logic: ", error);
+      } 
+    }; 
+
+    CheckerAnswers();
+
     if (correct && !answered[currentProblem]) {
       setScore(score + 1);
       setShowFeedback('correct');
