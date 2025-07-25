@@ -1,5 +1,5 @@
 
-##An interactive, responsive quiz web app built to help students practice solving integrals##
+**An interactive, responsive quiz web app built to help students practice solving integrals**
 
 ## 🚀 Tech Stack
 
