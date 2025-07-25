@@ -4,12 +4,12 @@
 ## 🚀 Tech Stack
 
 **Frontend Framework**
-- ⚛️ React 18 + TypeScript – SPA architecture
+- ⚛️ React 18 + TypeScript 
 - ⚡ Vite – Lightning-fast development and builds
 - 🔁 React Router DOM – For managing simple page routing
 
 **UI & Styling**
-- 🎨 Tailwind CSS – Utility-first styling
+- 🎨 Tailwind CSS – styling
 - 🧩 shadcn/ui – Accessible, prebuilt React components
 - 🔔 Lucide React – Modern icon set (Timer, Play, Trophy, etc.)
 
